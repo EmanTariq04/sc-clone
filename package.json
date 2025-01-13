@@ -10,11 +10,13 @@
     "@reduxjs/toolkit": "^2.5.0",
     "cra-template-redux": "2.0.0",
     "firebase": "^11.1.0",
+    "javascript-time-ago": "^2.5.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
+    "react-time-ago": "^7.3.3",
     "react-webcam": "^7.2.0",
     "uuid": "^11.0.5",
     "web-vitals": "^4.2.4"
