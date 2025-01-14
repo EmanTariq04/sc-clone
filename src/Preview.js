@@ -39,7 +39,7 @@ function Preview() {
       await addDoc(collection(db, "posts"), {
         id,
         image: cameraImage,
-        username: "emannn",
+        username: username,
         read: false,
         profilePic: user.profilePic,
         timestamp: serverTimestamp(),
