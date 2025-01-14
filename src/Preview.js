@@ -15,11 +15,13 @@ import SendIcon from "@mui/icons-material/Send";
 import { v4 as uuid } from "uuid";
 import { db } from "./firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { selectUser } from "./features/appSlice";
 
 function Preview() {
   const cameraImage = useSelector(selectCameraImage);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const user = useSelector(selectUser);
 
   useEffect(() => {
     if (!cameraImage) {
@@ -39,6 +41,7 @@ function Preview() {
         image: cameraImage,
         username: "emannn",
         read: false,
+        profilePic: user.profilePic,
         timestamp: serverTimestamp(),
       })
       console.log("Image successfully uploaded to Firestore");

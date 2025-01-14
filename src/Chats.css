@@ -4,6 +4,22 @@
   width: 265px;
 }
 
+.chats-takepicicon {
+  position: absolute;
+  background-color: white;
+  border-radius: 200px;
+  color: gray;
+  font-size: 40px !important;
+  cursor: pointer;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chats-takepicicon:hover {
+  opacity: 0.8;
+}
+
 .chats-header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +44,16 @@
   opacity: 1;
 }
 
+.chats-searchicon {
+  color: white;
+  font-size: 13px !important;
+}
+
+.chats-chaticon {
+  color: white;
+  font-size: 18px !important;
+}
+
 .chats-posts {
   box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.44);
   height: 359px !important;
@@ -39,7 +65,7 @@
 }
 
 .chats-posts::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .chats-avatar {
