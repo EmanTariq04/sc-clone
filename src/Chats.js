@@ -48,6 +48,7 @@ function Chats() {
               imageUrl={imageUrl}
               read={read}
               profilePic={profilePic}
+              timestamp={timestamp}
             />
           )
         )}
